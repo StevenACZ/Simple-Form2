@@ -15,7 +15,7 @@ img {
   display: block;
 }
 
-.input {
+.input, label {
   outline: none;
   background: transparent;
   border-left: 0;
@@ -58,3 +58,50 @@ img {
 /*---------------
 -- .main
 ---------------*/
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 100vh;
+}
+
+/*---------------
+-- .login
+---------------*/
+.login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  padding: 0 30px;
+}
+
+  .login__container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 2px solid white;
+    border-radius: 40px;
+    color: white;
+    padding: 30px 68px 20px;
+    min-height: 700px;
+    width: 300px;
+  }
+
+    .login__container h2 {
+      margin-bottom: 30px;
+      font-family: 'Muli', sans-serif;
+      font-size: 25px;
+    }
+
+    .login__container--form {
+      display: flex;
+      flex-direction: column;
+    }
+
+ 
+

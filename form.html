@@ -5,13 +5,42 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
+  <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="./styles/main.css">
+  <link rel="stylesheet" href="./styles/reset.css">
 
   <title>Formulario</title>
 </head>
 <body>
   <div class="main">
+    <section class="login__container">
 
+      <h2 tabindex="0">Iniciar sesión</h2>
+      <!--login__container--form-->
+      <form class="login__container--form" action="">
+        <input class="input" type="text" placeholder="Nombre" aria-label="Correo" required pattern="[A-Za-z]+">
+        <input class="input" type="password" placeholder="Apellido" aria-label="Apellido" required pattern="[A-Za-z]+">
+        <input class="input" type="number" placeholder="Edad" aria-label="Edad" required
+        min="18" max="80">
+
+        <label>Sexo</label>
+        <label>
+          M
+          <input type="radio" name="sex" value="m" required>
+        </label>
+        <label>
+          F
+          <input type="radio" name="sex" value="f" required>
+        </label>
+
+        <input class="input" type="text" placeholder="DNI" aria-label="DNI" required minlength="8" pattern="[A-Za-z0-9]+">
+        <input class="input" type="email" placeholder="Email" aria-label="Email" required>
+        <button class="button">Iniciar sesión</button>
+
+      </form>
+    
+    </section>
   </div>
 </body>
 </html>
