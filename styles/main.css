@@ -1,0 +1,60 @@
+/*---------------
+-- GLOBALS
+---------------*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: linear-gradient(#f58b54, #a34a28);
+  font-family: 'Muli', sans-serif;
+}
+
+img {
+  display: block;
+}
+
+.input {
+  outline: none;
+  background: transparent;
+  border-left: 0;
+  border-top: 0;
+  border-right: 0;
+  border-bottom: 2px solid white;
+  font-family: 'Muli', sans-serif;
+  margin-bottom: 20px;
+  padding: 0 20px;
+  height: 50px;
+  color: white;
+}
+
+.input:valid {
+  border-bottom: 2px solid white;
+}
+
+.input:invalid {
+  border-bottom: 2px solid #a34a28;
+}
+
+::placeholder {
+  color: white;
+}
+
+.button {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: none;
+  border-radius: 25px;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 16px;
+  font-family: 'Muli', sans-serif;
+  height: 50px;
+  letter-spacing: 1px;
+  margin: 10px 0;
+}
+
+/*---------------
+-- .main
+---------------*/
